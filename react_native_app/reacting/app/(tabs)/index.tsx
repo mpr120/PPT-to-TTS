@@ -13,7 +13,7 @@ export default function Index() {
       </View>
       <View style={styles.footerContainer}>
         <Button theme="primary" label="Choose a PPT file" />
-        <Button label="Use this PPT file" />
+        <Button label="Transform to Audio" />
       </View>
     </View>
   );
