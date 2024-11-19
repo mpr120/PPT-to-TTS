@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPT to Speech Converter</title>
+</head>
+<body>
+    <h1>Upload PowerPoint to Convert to Speech</h1>
+    <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="ppt-file">Select PowerPoint File (.ppt or .pptx):</label>
+        <input type="file" name="ppt-file" id="ppt-file" accept=".ppt,.pptx" required>
+        <button type="submit">Upload and Convert</button>
+    </form>
+
+    <div id="audio-container"></div>
+
+    <script>
+        const form = document.getElementById('upload-form');
+        form.onsubmit = async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.audioUrl) {
+                    const audioContainer = document.getElementById('audio-container');
+                    const audioElement = document.createElement('audio');
+                    audioElement.controls = true;
+                    audioElement.src = result.audioUrl;
+                    audioContainer.innerHTML = ''; // Clear previous audio
+                    audioContainer.appendChild(audioElement);
+                } else {
+                    alert('Error: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Error uploading PPT:', error);
+                alert('Error processing the file');
+            }
+        };
+    </script>
+</body>
+</html>
