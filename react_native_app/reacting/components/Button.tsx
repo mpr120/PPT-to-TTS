@@ -4,6 +4,7 @@ import { StyleSheet, View, Pressable, Text } from 'react-native';
 type Props = {
   label: string;
   theme?: 'primary';
+  onPress?: () => void;
 };
 
 export default function Button({ label, /* @tutinfo The prop <CODEtheme</CODE> to detect the button variant. */theme }: Props) {
