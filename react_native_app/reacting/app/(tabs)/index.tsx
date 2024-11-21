@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
 import ImageViewer from "@/components/ImageViewer";
+
+
 import Button from '@/components/Button';
 
 const PlaceholderImage = require('@/assets/images/images/image_1.png');
 
 export default function Index() {
-  //user has clicked "Choose PPT button".
-  //pull up menu of files as you did before.
-  const handleChoosePPT = () =>{
 
+  const handleChoosePPT = async () => {
+   
   };
-  //user has clicked "Transform to audio button"
-  //as you did before create the audio file of the PPT/PPTX chosen from above.
-  const handleTransform = () =>{
 
+  
+  const handleTransform = async () => {
+   
   };
 
 
