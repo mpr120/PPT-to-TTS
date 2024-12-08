@@ -1,4 +1,4 @@
-# :file_folder:PPT-to-TTS:loud_sound:
+# :file_folder:PPT Speaks:loud_sound:
 This project converts PPT files to Speech.
 
 ## :open_file_folder:How to clone:open_file_folder:
