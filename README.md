@@ -3,7 +3,7 @@ This project converts PPT files to Speech.
 
 ## How to clone:
 1. Click <>Code(green button)
-2. Clone using URL
+2. Clone using URL with terminal using command "git clone" URL
 
 ## How to Run:
 1. Locate and Open folder in IDE
