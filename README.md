@@ -11,6 +11,5 @@ This project converts PPT files to Speech.
 3. In terminal use command "python app.py" (if using mac use "python3" instead of "python")
 4. Will be on local host, go to local host and use program.
 
-## Example PowerPoint used in testing:
 
 
