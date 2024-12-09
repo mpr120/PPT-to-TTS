@@ -10,3 +10,7 @@ This project converts PPT files to Speech.
 2. In terminal of IDE use command "pip install -r requirements.txt" (if using mac use "pip3" instead of "pip")
 3. In terminal use command "python app.py" (if using mac use "python3" instead of "python")
 4. Will be on local host, go to local host and use program.
+
+Example PowerPoint used in testing:
+
+introductiontophysicalgeology2-171008203017.pptx
